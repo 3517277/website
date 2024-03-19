@@ -7,7 +7,7 @@ Una forma fácil para crear un `Catcher` personalizado es retornar `Catcher` el 
 ```rust
 use salvo::catcher::Catcher;
 
-Service::new(router).with_catcher(Catcher::default());
+Service::new(router).catcher(Catcher::default());
 ```
 
 Por defecto `Catcher` soporta envío de página de erroresen formato `XML`, `JSON`, `HTML` y `Text` .
